@@ -8,3 +8,8 @@ _menuToggle.onclick = () => {
     _navigation.classList.toggle('active');
     _main.classList.toggle('active')
 }
+
+Hire_meFun = () => {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
