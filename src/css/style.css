@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Creepster', cursive; */
+  /* font-family: "Monoton", cursive; */
+  /* font-family: "Nanum Pen Script", cursive; */
+  font-family: "Autour One", cursive;
+}
+body {
+  overflow-x: hidden;
+}
+/*Menu page section css*/
+.navigation {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background: rgb(51, 51, 51);
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+/* Making active to change after click */
+.navigation.active {
+  left: 0;
+}
+.banner {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navigationbar {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.navigationbar ul {
+  position: relative;
+  width: 100%;
+}
+.navigationbar ul li {
+  position: relative;
+  list-style: none;
+}
+.navigationbar ul li a {
+  font-family: 'Cabin Sketch', cursive;
+  position: relative;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 5px 0;
+  margin-left: 100px;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.navigationbar ul li a:hover {
+  color: #ff7f50;
+}
+/*Main page section css*/
+.main {
+  position: relative;
+  left: 0;
+  width: 100%;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  transition: 1s;
+}
+.main.active {
+  left: 100%;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+.toggle {
+  position: relative;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.toggle.active {
+  left: -200px;
+  transition: 1s;
+}
+/* Making Equal button */
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #777;
+  transform: translateY(-6px);
+  transition: 0.5s;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #777;
+  transform: translateY(6px);
+  transition: 0.5s;
+}
+/* Making Equal button */
+/* Making Cross button */
+.toggle.active::before {
+  transform: translateY(0px) rotate(-45deg);
+  background: white;
+}
+.toggle.active::after {
+  transform: translateY(0px) rotate(45deg);
+  background: white;
+}
+/* Making Cross button */
+.Hire_me {
+  font-family: 'Cabin Sketch', cursive;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #ff1455;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+.main .profileImg {
+  position: relative;
+  min-width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.main .content {
+  max-width: 700px;
+  margin-left: 40px;
+}
+.main .content h2 {
+  font-family: "Monoton", cursive;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #777;
+  line-height: 2.5em;
+}
+.main .content h2 span {
+  font-family: "Monoton", cursive;
+  font-weight: 700;
+  color: #2196f3;
+  font-size: 3em;
+}
+.main .content p {
+  font-family: "Nanum Pen Script", cursive;
+  color: #777;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.main .content .CV {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.logo li {
+  list-style: none;
+}
+.logo li a {
+  position: relative;
+  margin-left: 20px;
+  display: inline-block;
+  transform: scale(1.5);
+  opacity: 0.8;
+}
+.copyright {
+  font-family: "Nanum Pen Script", cursive;
+  cursor:wait;
+  font-weight: 500;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+/* Making Site Responsive*/
+@media (max-width: 991px) {
+  .main {
+    padding: 40px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header {
+    padding: 20px 40px;
+  }
+  footer {
+    padding: 20px 40px;
+  }
+  .main .profileImg {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    margin-top: 100px;
+  }
+  .main .content {
+    margin-bottom: 100px;
+    margin-left: 0;
+    max-width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .main .content h2 span {
+    font-size: 2em;
+  }
+  .banner {
+    display: none;
+  }
+  .navigationbar {
+    width: 100%;
+  }
+  .toggle.active {
+    left: -120px;
+  }
+  .navigationbar ul li a {
+    font-size: 1.5em;
+  }
+}
