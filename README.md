@@ -1,2 +1,8 @@
-# resume
-This repository contains private code any use of this code is restricted only used for hiring purpose. cloning or manipulating this branch and using this for making profit is criminal offence strict action will be taken against them.
+## Made with :heart:
+Portfolio :computer: https://hariomgola.github.io/resume/
+Portfolio :computer: https://hariomgola.github.io/
+
+### :point_right: `I see it I love it I code it`
+
+## Project Status
+     - Completed
